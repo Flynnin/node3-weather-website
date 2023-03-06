@@ -66,7 +66,10 @@ app.get("/weather", (req, res) => {
         res.send({
           forecast: weatherData.forecast,
           location,
+          localTime: weatherData.localTime,
           temperature: weatherData.temperature,
+          windSpeed: weatherData.windSpeed,
+          humidity: weatherData.humidity,
         });
       });
     }
